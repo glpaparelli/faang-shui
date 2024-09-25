@@ -1,0 +1,181 @@
+{
+  "main": {
+    "id": "9283a6c4952d2387",
+    "type": "split",
+    "children": [
+      {
+        "id": "5935c0e8199a81e7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "133708df4c740bd7",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ee7b9864003eaeb6",
+    "type": "split",
+    "children": [
+      {
+        "id": "82fad2f8b7dcd4f2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "034515edfba96174",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "eacf90d1c48fa0c1",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e3afebfd72310031",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "cac5045fc60be47d",
+    "type": "split",
+    "children": [
+      {
+        "id": "158e3615a95e5c2e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2b7882da59b00849",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "a06249f20fcc86fc",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "819d47094fad39c8",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "94a7fd32521fdfde",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "133708df4c740bd7",
+  "lastOpenFiles": [
+    "concepts/software-engineering/Software Components.md",
+    "concepts/software-engineering",
+    "concepts/programming-languages",
+    "concepts/programming-languages/Scoping.md",
+    "concepts/programming-languages/Runtime Systems.md",
+    "concepts/programming-languages/Polymorphism.md",
+    "Index.md",
+    "java/core/Java 101.md",
+    "java/Java Interview Questions.md",
+    "java/core/collections-and-data-structures/Java Collections.md",
+    "java/core/Java String.md",
+    "java/advanced/Java Multithreading and Concurrency.md",
+    "java/core/Java Conventions.md",
+    "java/advanced/java-functional-programming/Java Functional Programming.md",
+    "java/core/collections-and-data-structures/Java Iterator.md",
+    "java/core/collections-and-data-structures/Java Collection Framework.md",
+    "java/core/Java Virtual Machine.md",
+    "java/core/Java Equality.md",
+    "java/core/Java Inheritance.md",
+    "java/core/Java Modifiers.md",
+    "java/core/Java Inner Classes.md",
+    "java/core/collections-and-data-structures/HashMap.md",
+    "java/core/collections-and-data-structures/ArrayList-vs-Vector.md",
+    "java/core/collections-and-data-structures/ArrayList-vs-LinkedList.md",
+    "java/advanced/Java Reflection.md",
+    "java/advanced/Java Var.md",
+    "java/advanced/Java Defender Methods.md",
+    "java/advanced/Java Beans.md",
+    "java/advanced",
+    "java/core",
+    "java/advanced/java-functional-programming",
+    "imgs",
+    "imgs/Pasted image 20240923175426.png",
+    "java/how-to",
+    "java/core/collections-and-data-structures",
+    "tmp/ArrayList-vs-LinkedList.txt",
+    "tmp/ArrayList-vs-Vector.txt"
+  ]
+}
