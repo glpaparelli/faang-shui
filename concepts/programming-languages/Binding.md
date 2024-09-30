@@ -23,4 +23,6 @@ if(something)
 else 
 	a = new C();
 ```
-It is clear that the type of `a` is determined at runtime, depending on which branch of the `if` statement is executed.
+It is clear that the type of `a` is determined at runtime, depending on which branch of the `if`
+statement is executed.
+

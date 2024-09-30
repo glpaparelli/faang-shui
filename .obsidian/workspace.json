@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "5935c0e8199a81e7",
+        "id": "fd892661cc8a7d0e",
         "type": "tabs",
         "children": [
           {
-            "id": "133708df4c740bd7",
+            "id": "aad7c08678f93285",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Index.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Index.md"
+              }
             }
           }
         ]
@@ -138,41 +146,46 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "133708df4c740bd7",
+  "active": "aad7c08678f93285",
   "lastOpenFiles": [
-    "concepts/software-engineering/Software Components.md",
+    "java/advanced/java-functional-programming/Java Streams.md",
+    "java/advanced/java-functional-programming/Java Optional.md",
+    "java/advanced/java-functional-programming/Java Lambdas.md",
+    "java/advanced/java-functional-programming/Java Functional Programming.md",
+    "Index.md",
+    "java/core/collections-and-data-structures/Java Iterator.md",
+    "java/core/collections-and-data-structures/Java Collections.md",
+    "java/core/Java Generics.md",
+    "java/core/Java Polymorphism.md",
+    "java/core/Java Equality.md",
+    "java/core/Java Exceptions.md",
+    "Vector.md",
+    "java/core/collections-and-data-structures/TreeSet.md",
+    "java/core/collections-and-data-structures/TreeMap.md",
+    "java/core/collections-and-data-structures/LinkedList.md",
+    "java/core/collections-and-data-structures/HashSet.md",
+    "java/core/collections-and-data-structures/ArrayList.md",
+    "java/core/collections-and-data-structures/ArrayList-vs-LinkedList.md",
+    "java/core/collections-and-data-structures/ArrayList-vs-Vector.md",
+    "imgs/Screenshot from 2024-09-30 17-34-34.png",
+    "java/core/collections-and-data-structures/HashMap.md",
+    "java/core/Java Inner Classes.md",
+    "concepts/programming-languages/Runtime Systems.md",
+    "concepts/programming-languages/Scoping.md",
+    "concepts/programming-languages/Binding.md",
+    "concepts/programming-languages/Abstract Machine.md",
+    "java/core/Java Virtual Machine.md",
+    "imgs/Screenshot from 2024-09-30 12-26-34.png",
+    "Pasted image 20240930094224.png",
+    "imgs/Pasted image 20240923175426.png",
+    "imgs/Pasted image 20240930093709.png",
+    "Pasted image 20240930093638.png",
     "concepts/software-engineering",
     "concepts/programming-languages",
-    "concepts/programming-languages/Scoping.md",
-    "concepts/programming-languages/Runtime Systems.md",
-    "concepts/programming-languages/Polymorphism.md",
-    "Index.md",
-    "java/core/Java 101.md",
-    "java/Java Interview Questions.md",
-    "java/core/collections-and-data-structures/Java Collections.md",
-    "java/core/Java String.md",
-    "java/advanced/Java Multithreading and Concurrency.md",
-    "java/core/Java Conventions.md",
-    "java/advanced/java-functional-programming/Java Functional Programming.md",
-    "java/core/collections-and-data-structures/Java Iterator.md",
-    "java/core/collections-and-data-structures/Java Collection Framework.md",
-    "java/core/Java Virtual Machine.md",
-    "java/core/Java Equality.md",
-    "java/core/Java Inheritance.md",
-    "java/core/Java Modifiers.md",
-    "java/core/Java Inner Classes.md",
-    "java/core/collections-and-data-structures/HashMap.md",
-    "java/core/collections-and-data-structures/ArrayList-vs-Vector.md",
-    "java/core/collections-and-data-structures/ArrayList-vs-LinkedList.md",
-    "java/advanced/Java Reflection.md",
-    "java/advanced/Java Var.md",
-    "java/advanced/Java Defender Methods.md",
-    "java/advanced/Java Beans.md",
     "java/advanced",
     "java/core",
     "java/advanced/java-functional-programming",
     "imgs",
-    "imgs/Pasted image 20240923175426.png",
     "java/how-to",
     "java/core/collections-and-data-structures",
     "tmp/ArrayList-vs-LinkedList.txt",

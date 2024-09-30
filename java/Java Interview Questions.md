@@ -18,18 +18,19 @@ Another way to achieve immutability is to make the members of the class private 
 	- When we create a `String` with the `new` operator it is created in the heap and not added into the String Pool.
 - **literal:**
 	- When we create a `String` using a string literal the string in the String Pool itself, which exists in the `PermGen` area of the heap. 
+
+More on this in [[Java String#String Initialization|String Initialization]]. 
 #### What is the difference between StringBuffer and StringBuilder?
-`StringBuffer` methods are synchronized while `StringBuilder` is not synchronized.  
+[[Java String#Mutable Strings StringBuffer and StringBuilder|StringBuffer and StringBuilder]]
 #### What is the difference between ArrayList and Vector? 
-[[ArrayList-vs-Vector]]
+[[ArrayList-vs-Vector|ArrayList vs Vector]] 
 #### Design Patterns: Factory vs Abstract Factory
 **TODO**
 #### When you override hashcode() and equals()? 
-Whenever is necessary, main examples are: 
+**Whenever is necessary, main examples are:** 
 - I want to use the object as a key in an `HashMap`
 - I want to use  `.equals()` for comparing objects
 - I want to use `.clone()` for cloning that object
-
 #### When creating a Singleton it is better to synchronize the whole creation method or only its critical section? 
 The smaller the synchronized part of the code is the better, so the answer is only the critical section.
 #### If a method throws NullPointerException can we override it with a method that throws RuntimeException?
@@ -41,7 +42,6 @@ There are two main points:
   2) **Order of resource acquisition:** 
 	  1) The first thread that get a resource should be the first to release it
 	  2) If you acquire resources in a particular order and release it in that order but reversed you can always prevent deadlock 
-
 #### Differences between sleep() and wait()
 - `sleep()` do not release the lock, while `wait()` releases the lock
 - `sleep()` is in the `java.lang.Thread` class and hence it can be called on a `Thread` object while `wait()` is in the `java.lang.Object` class, thus it can be called on any object

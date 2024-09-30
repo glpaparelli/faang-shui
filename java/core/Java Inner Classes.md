@@ -56,7 +56,6 @@ public void print(){
 	// stuff
 }
 ```
-
 ##### Anonymous Inner Class
 **A local inner class without a name is called anonymous inner class.** 
 

@@ -24,12 +24,13 @@ Useful for accessing overridden methods or invoking the parent class constructor
 Java supports **single inheritance**, meaning a class can inherit from only one superclass directly.
 
 **A class cannot extend more than one class** because it can lead to **the diamond problem:** 
-![[Pasted image 20240923175426.png | center | 250]]
-Say that class `B` and class `C` define the same method `foo()`.  
-If an object of type `D` call super.D() which method is called? 
-
+![[Pasted image 20240930093709.png | center | 450]]
+If an object of type `Z` call `methodX()` which method is called? The instance method of class `Z`, since we have Dynamic Dispatching. 
+But if `Z` would not override `methodX()` and would call `super.methodX()` which implementation would be called?
 **Java support multiple inheritance by supporting multiple implementations of interfaces: a class can implement more than one interface.**
 #### `Object` Class:
 Every class in Java implicitly extends the `Object` class, which is the root of the class hierarchy.
 #### Why the Constructor of the subclass has to invoke `super()` as the first statement?
+**TODO**
+## Java Dynamic Dispatcher
 **TODO**

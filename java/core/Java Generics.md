@@ -1,4 +1,4 @@
-Java Generics are the Java way to [[Polymorphism]], specifically in Java we have *universal -> parametric -> explicit -> bounded (invariant)* polymorphims
+Java Generics are the Java way to [[Java Polymorphism#2) Universal Polymorphism|Universal Polymorphism]]. 
 
 Classes, interfaces and methods can have **Type Parameters** (in the following example `E`) which can be used arbitrarily in the definition:
 ```java
@@ -7,43 +7,41 @@ interface List<E>{
 	E get(int index);
 }
 ```
-And they can be instatiated by providing arbitrary (reference) type arguments (reference types: a reference to an object):
+
+And they can be instantiated by providing arbitrary (reference) type arguments:
 ```java
 List<Integer>
 List<String>
 ...
 ```
 
-The "declaration" of a generic type is *explicit*, meaning that if we want to use a generic type `E` we have to use the explicitly show it (not as in Haskell, where everything is basically generic)
-
+The "declaration" of a generic type is **explicit**, meaning that if we want to use a generic type `E` we have to use the explicitly instantiate it.
 ### Type Erasure
-All type parameters of generic types are transformed to `Object` or to their first [[Java Generics#Bounded Type Parameters]] after compilation. 
-The main reason is the backward compability with the legacy code, the result is the fact that at runtime all the instances of the same generic type have the same type. 
+All type parameters of generic types are transformed to `Object` or to their first **bounded type parameters** (see later) after compilation. 
+The main reason is the backward compatibility with the legacy code, the result is the fact that at runtime all the instances of the same generic type have the same type. 
 
-*example:*
+**Example**:
 ```java
 List<Integer> intList = new ArrayList<Integer>();
 List<String> strList = new ArrayList<String>();
 
 intList.getClass() == strList.getCLass() // true
 ```
-
 ### Generic Methods
-Methdos can use the type parameters of the class/interface where they are defined, if any:
+Methods can use the type parameters of the class/interface where they are defined, if any:
 ```java
 interface List<E>{
 	boolean add(E element);
 	E get(int index);
 }
 ```
-The type `E` is generic and used by the methdos of the interface/class itslef
+The type `E` is generic and used by the methods of the interface/class itself. 
 
 Methods can also introduce their own type parameters, as:
 ```java
 public static <T> T getFirst(List<T> list)
 ```
 The generic type `T` is visible only inside this method and this allow us to maintain generic abstraction of single methods
-
 ### Bounded Type Parameters
 ```java
 class NumList<E extends Number> {
@@ -53,7 +51,6 @@ class NumList<E extends Number> {
 }
 ```
 When we want to instantiate a `NumList` object we have to use as type parameter a class that implements `Number`. This way we can invoke methods that are surely defined since inherited,
-
 #### Type Bounds
 - **upper bound**: `<TypeVar extends SuperType>`
 	- `SuperType` and any of its subtype are ok
@@ -63,7 +60,6 @@ When we want to instantiate a `NumList` object we have to use as type parameter 
 	- `SubType` and any of its supertype are ok
 
 *Type bounds for methods guarantee that the type argument supports the operations used in the method body*
-
 ### Invariance, Covariance and Controvariance
 In Java we know that `Integer` is a subtype `Number` but *it is not true* that `List<Integer>` is a subtype of `List<Number>`.
 Given two concrete types `A` and `B`, `Class<A>` *has no relationship* with `Class<B>`, regardless of any relationship between `A` and `B`
@@ -76,7 +72,6 @@ Given two concrete types `A` and `B`, `Class<A>` *has no relationship* with `Cla
 
 On the other hand, as expected, if `A` extends `B` and they are generic classes then for each type `C` we have that `A<C>` extends `B<C>`
 - `ArrayList<Integer>` *is a subtype* of `List<Integer>`
-
 #### Covariance and Controvariance
 Let's say that we have the interface:
 ```java 
@@ -116,9 +111,7 @@ We have
 - **statement 2**: with controvariance it would be possible since the relationship between `List<Integer>` and `List<Number>` would be the reverse of the relationship between `Integer` and `Number`
 	- in the **statement 4** `intList.get(0)` would return a `Number`, which is a supertype of `Integer` and hence the assigment fails
 
-The *substitution principle* ([[Polymorphism#Inclusion]]) is violated by both covariance and controvariance, hence **the Java choice to use only invariance is correct** here. 
-
-
+The *substitution principle* ([[Java Polymorphism#Inclusion]]) is violated by both covariance and controvariance, hence **the Java choice to use only invariance is correct** here. 
 ##### Where Covariance would be Safe
 ```java 
 interface List<T> {
@@ -133,7 +126,6 @@ Hence, when instantiated with `Number` and `Integer` we have that:
 
 In this case a covariant setting, where `List<Integer>` is a subtype of `List<Number>` would be safe. 
 *In general: covariance is safe if the type is read-only*
-
 ##### Where Controvariance would be Safe
 ```java 
 interface List<T> {
@@ -148,7 +140,6 @@ Hence, when instantiated with `Number` and `Integer` we have that:
 
 In this case a controvariant setting, where `List<Integer>` is a supertype of `List<Number>` would be safe. 
 *In general: controvariance is safe if the type is write-only*
-
 ### Java Arrays
 Arrays are like built-in containers. Assume that `Type1` is subtype of `Type2`, how are related `Type1[]` and `Type2[]`? 
 
@@ -166,7 +157,6 @@ But the previous rules do not apply in this cases: if `Type1` is subtype of `Typ
 
 Why? Think to the method `void sort(Object[] array)`. This works because `Object[]` is the supertype of any array, it exploit the covariance. 
 Without the covariance we would need to define a new method `sort` for evert array! Sorting do not insert new objects in the array, it is a read-only operation, which we have seen to be safe with covariance. 
-
 #### Problems with Array Covariance
 Even if the array covariance works for sort it may cause type errors in other cases:
 ```java
@@ -186,18 +176,15 @@ The dymaic type of an array is known only at runtime: every array update include
 
 This scenario also shows why *Java do not supports generic arrays*: the dynamic type of an array is known only at runtime but the generics at runtime are casted to `Object` due to type erasure. 
 This would result in non-detectable errors and since Java is type-safe generics array are not supported
-
 ### Wildcards "?"
 A wildcard is an anonymous variable
 - `?` is of unknown type
 - wildcards are used when a type is used exactly once and the name is unknown
 - they are used for *use-site variance*: they provide on-spot co/contra-variance functionality
-
 #### Syntax of Wildcards
 - `? extends Type`: denotes an unknown subtype of `Type`
 - `?`: shorthand for `? extends Object`
 - `? super Type`: denotes an unknown supertype of `Type`
-
 #### Wildcards for Covariance
 Invariance of generic classes is correct but restrict (it is bad for code reuse), wildcards can alleviate the problem. 
 
@@ -213,7 +200,6 @@ what is a "general enough" type for the method `addAll`?
 - `void addAll(Collection<E> c)`: better solution since `List`, `Queue`, ... are all subtypes of `Collection`. The problem is that it do not take into account the elements accepted by covariance. The elements of a `List<T>` with `T` subtype of `E` should be allowed to be added to the set
 - **best solution:** `void addAll(Collection<? extends E> c`
 	- match any collection of elements of type subtype of `E`
-
 ##### What about Type Safety?
 ```java 
 List<Apple> apples = new ArrayList<Apple>();
@@ -224,7 +210,6 @@ fruits.add(new Pear()); // compile-time error
 - we can't do `fruits.add(new Pear())` for **two** reasons
 	-  the compiler can't know the type of `fruits` at static type
 		- the compiler won't allow the modification of `fruits`
-
 #### When should Wildcards be used?
 The "**PECS**" Principle: **P**roducer **E**xtends, **C**onsumer **S**uper
 - use `? extends T` when you want to get values (from a producer): supports covariance 
@@ -237,10 +222,8 @@ The "**PECS**" Principle: **P**roducer **E**xtends, **C**onsumer **S**uper
 <T> void copy(List<? super T> dst, List<? extends T> src); 
 ```
 We exploit covariance for `src` and contravariance for `dst`
-
 #### The Price of Wildcards
 A wildcard type is anonymous/unknown, and it reduce the possibility of reading/writing of objects due the restriction of covariance and contravariance
-
 ##### The Price of Wildcard Covariance
 ```java
 List<Apple> apples = new List<Apples>();
@@ -262,7 +245,6 @@ fruits.add(null);        // D
 	- also, can't add anything due to covariance constraints
 - **D**: ok
 	- lists that exploit covariance (as in this case) can't be modified, we can only add `null`
-
 ##### The Price of Wildcard Contravariance
 ```java
 List<Fruit> fruits = new ArrayList<Fruit>();
@@ -288,7 +270,6 @@ Object o = apples.get(0);    // E
 	- mind that the compiler signal error no matter what since we are reading with contravariance
 - **E**: ok
 	- check **D**
-
 ### Limitations of Java Generics
 Mostly due to the concept of type erasure
 - **cannot instantiate generics types with primitive types**

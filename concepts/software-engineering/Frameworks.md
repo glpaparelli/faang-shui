@@ -248,7 +248,7 @@ It is easier to find dependencies of components if dependency injection is used:
 
 ## Desigining Software Frameworks
 Designing software frameworks is an intellectual challengin task that requires a deep understanding of the application domain. 
-It also requires mastering of [[Design Patterns]], object oriented programming and [[Polymorphism]]. 
+It also requires mastering of [[Design Patterns]], object oriented programming and [[Java Polymorphism]]. 
 
 ### Some Terminology
 - **software family**: set of different solutions for a common problem

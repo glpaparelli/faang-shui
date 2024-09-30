@@ -1,3 +1,5 @@
+The Java Virtual Machine is the [[Runtime Systems|Runtime System]] in which Java runs.
+
 **The JVM is a real abstract machine: Oracle do not impose an implementation of the JVM, the specification is only about abstract properties that must to be respected.**
 ## Execution Model 
 The JVM is a multi-threaded stack-based machine
