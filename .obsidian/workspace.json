@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "java/core/Java Conventions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Java Conventions"
             }
           }
         ]
@@ -165,11 +165,23 @@
   },
   "active": "23317227c2e24663",
   "lastOpenFiles": [
+    "lib/hamcrest-core-1.3.jar",
+    "lib/junit-4.13.2.jar",
+    "lib",
+    "problems/array/tmp/bin/App.class",
+    "problems/array/tmp/bin",
+    "problems/array/tmp/src/App.java",
+    "problems/array/tmp/src",
+    "problems/array/tmp/lib",
+    "problems/array/tmp/README.md",
+    "problems/array/tmp",
+    "problems/array/TwoSum.java",
+    "problems/array",
+    "java/Java.md",
     "Interview Training.md",
     "README.md",
     "2025-01-13.md",
     "concepts/algos-datastructures-techniques/Array.md",
-    "java/Java.md",
     "concepts/Notes from CP Course.md",
     "imgs/Screenshot from 2024-01-19 15-39-52.png",
     "imgs/Screenshot from 2024-01-19 15-34-31.png",
@@ -183,8 +195,6 @@
     "imgs/Screenshot from 2024-01-05 09-29-59.png",
     "java/core/collections-and-data-structures/ArrayList.md",
     "concepts/programming-languages/Abstract Machine.md",
-    "concepts/algos-datastructures-techniques",
-    "problems",
     "java/core/Java IO.md",
     "java/advanced/java-functional-programming/Java Functional Programming.md",
     "java/core/Java 101.md",
@@ -200,16 +210,6 @@
     "java/advanced/java-functional-programming/Java Optional.md",
     "java/advanced/java-functional-programming/Java Lambdas.md",
     "java/core/collections-and-data-structures/Java Iterator.md",
-    "java/core/collections-and-data-structures/Java Collections.md",
-    "java/core/Java Generics.md",
-    "java/core/Java Polymorphism.md",
-    "concepts/software-engineering",
-    "concepts/programming-languages",
-    "java/advanced",
-    "java/core",
-    "java/advanced/java-functional-programming",
-    "imgs",
-    "java/how-to",
-    "java/core/collections-and-data-structures"
+    "java/core/collections-and-data-structures/Java Collections.md"
   ]
 }
