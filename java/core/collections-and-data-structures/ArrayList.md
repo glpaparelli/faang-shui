@@ -1,9 +1,7 @@
 `ArrayList` in Java is a part of the [[Java Collections|Java Collection Framework]] and is used to store a dynamically resizable array of objects. 
 It implements the `List` interface and is a popular choice for handling collections of elements due to its flexible size and rich set of methods for manipulating data.
 
-ArrayList internally contains an array of values and a counter
-variable to know the current size at any point. If an element is added the size is 
-increased, if an element is removed the size is decreased. 
+ArrayList internally contains an array of values and a counter variable to know the current size at any point. If an element is added the size is increased, if an element is removed the size is decreased. 
 **ArrayList contains a single array for data storage.** 
 ### Key Features of `ArrayList`
 1. **Dynamic Sizing**: Unlike arrays, which have a fixed size, an `ArrayList` can grow and shrink dynamically as elements are added or removed.

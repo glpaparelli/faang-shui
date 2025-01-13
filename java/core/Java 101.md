@@ -8,7 +8,7 @@
 - **[[Java Polymorphism]]**: The ability of an object to take many forms. It can be achieved through:
     - **Method Overloading** (compile-time): Same method name with different parameters.
     - **Method Overriding** (runtime): Subclass provides a specific implementation of a method declared in the parent class.
-- **Abstraction**: Hiding the complex implementation details and showing only the essential features. This can be achieved using abstract classes and interfaces.
+- **Abstraction**: Hiding the complex implementation details and showing only the essential features. This can be achieved using [[Java Abstract Classes]] and [[Java Interfaces]]
 ### **Platform Independence**
 **Write Once, Run Anywhere (WORA)**: Java code is compiled into bytecode using the Java compiler. This bytecode can run on any platform (Windows, Linux, etc.) that has a Java Virtual Machine (JVM) without needing to recompile the code for each platform.
 ### **Java Virtual Machine (JVM)**
