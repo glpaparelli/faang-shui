@@ -1,7 +1,7 @@
-# faang-Shui
+# faang-shui
 (This whole repo is also an [Obsidian](https://obsidian.md/) Vault, use Obsidian to exploit internal links.)
 
-Welcome to **faang-Shui**, a repository dedicated to organizing and tracking my preparation for FAANG interviews. This repository contains resources, notes, and solutions that cover essential computer science concepts, programming knowledge, and problem-solving techniques.
+Welcome to **faang-shui**, a repository dedicated to organizing and tracking my preparation for FAANG interviews. This repository contains resources, notes, and solutions that cover essential computer science concepts, programming knowledge, and problem-solving techniques.
 ## Repository Structure
 The repository is organized into the following main folders:
 ### 1. **concepts**
