@@ -110,7 +110,6 @@ public double calculateTotalSalary(double baseSalary, double bonus) {
     - Use synchronized blocks carefully to avoid deadlocks. Prefer synchronizing at the smallest scope possible.
 - **Use `java.util.concurrent`**:
     - When dealing with concurrency, prefer using high-level constructs from `java.util.concurrent` (like `ExecutorService`, `CountDownLatch`, etc.) instead of manually managing threads.
-
 ### 9. Unit Testing Conventions
 - **Use `@Test` Annotation**:
     - Use `JUnit` or other testing frameworks and annotate test methods with `@Test`.
