@@ -1,4 +1,4 @@
-package problems.array;
+package problems.array.easy;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -14,22 +14,25 @@ import java.util.Map;
  * 
  * You can return the answer in any order. 
  * 
- * SOLUTION: 
- * - trivial solution: O(n^2), two nested loops.
+ * SOLUTIONS: 
+ * - Trivial Solution: O(n^2), two nested loops.
  * 
- * - less trivial solution: O(nlog(n)), sort then two pointers, l = 0 and r = n-1
- *                          if nums[l] + nums[r] = target then [l,r]
- *                          if nums[l] + nums[r] > target then r--
- *                          if nums[l] + nums[r] < target then l++
- *                          Mind that the problem wants the original indexes, you have to remember
- *                          the original ordering of the array.
+ * - Less Trivial Solution: O(nlog(n)).
+ *   Sort then two pointers, l = 0 and r = n-1
+ *      if nums[l] + nums[r] = target then [l,r]
+ *      if nums[l] + nums[r] > target then r--
+ *      if nums[l] + nums[r] < target then l++
+ *   Mind that the problem wants the original indexes, you have to remember 
+ *   the original ordering of the array.
  * 
- * - optimal solution: O(n), build a hmap: nums[i] -> i
- *                     Go through nums with i: if target - nums[i] is contained within the map
- *                     then the solution [i, map.get(target-nums[i])] is a valid solution.
+ * - Optimal Solution: O(n)
+ *   Build a map: nums[i] -> i.
+ *   Go through nums with i: if target - nums[i] is contained within the map
+ *   then the solution [i, map.get(target-nums[i])] is a valid solution.
  * 
- * - optimized optimal solution: O(n), search and fill the map in the same pass, the solution is 
- *                               inverted but by problem specification it is ok.
+ * - Optimized Optimal Solution: O(n)
+ *   Search and fill the map in the same pass, the solution is inverted but 
+ *   by problem specification it is ok.
  */
 
 public class TwoSum {

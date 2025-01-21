@@ -1,8 +1,13 @@
+***
 **Timeline:**
-- **technical interview training:** 13/01 - 09/02
-- **start sending out applications:** 31/01
-- **start organizing mocking interviews:** 31/01
-- **start with interviews & behavioral stuff:** 31/01
+- **technical interview training:** 21/01 - 28/02
+- **start sending out applications:** 15/01
+- **start organizing mocking interviews:** 15/01
+- **start with interviews & behavioral stuff:** 15/01
+
+**Objective: 15 problems per day**
+- 21/01: 6
+***
 
 **Stuff for preparing Interviews.**
 1) [[Java]]

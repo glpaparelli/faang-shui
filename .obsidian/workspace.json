@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview Training.md",
+                "file": "concepts/algos-datastructures-techniques/Array.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Interview Training"
+              "title": "Array"
             }
           }
         ]
@@ -165,24 +165,25 @@
   },
   "active": "23317227c2e24663",
   "lastOpenFiles": [
-    "java/core/Java Conventions.md",
-    "lib/hamcrest-core-1.3.jar",
-    "lib/junit-4.13.2.jar",
-    "lib",
-    "problems/array/tmp/bin/App.class",
-    "problems/array/tmp/bin",
-    "problems/array/tmp/src/App.java",
-    "problems/array/tmp/src",
-    "problems/array/tmp/lib",
-    "problems/array/tmp/README.md",
-    "problems/array/tmp",
-    "problems/array/TwoSum.java",
-    "java/Java.md",
+    "concepts/Notes from CP Course.md",
     "Interview Training.md",
+    "problems/array/medium/CombinationSum.java",
+    "concepts/algos-datastructures-techniques/Array.md",
+    "problems/array/medium/PoAES.java",
+    "problems/array/medium/PoAeS.java",
+    "problems/array/medium",
+    "problems/array/easy/MeetingRooms.java",
+    "problems/strings/easy/ValidPalindrome.java",
+    "problems/strings/easy",
+    "problems/strings",
+    "problems/array/easy/ValidPalindrome.java",
+    "problems/array/easy/TwoSum.java",
+    "java/Java Miscellaneous.md",
+    "java/core/Java Conventions.md",
+    "problems/array/tmp/README.md",
+    "java/Java.md",
     "README.md",
     "2025-01-13.md",
-    "concepts/algos-datastructures-techniques/Array.md",
-    "concepts/Notes from CP Course.md",
     "imgs/Screenshot from 2024-01-19 15-39-52.png",
     "imgs/Screenshot from 2024-01-19 15-34-31.png",
     "imgs/Screenshot from 2024-01-09 10-01-57.png",
@@ -208,7 +209,6 @@
     "java/advanced/java-functional-programming/Java Streams.md",
     "java/advanced/java-functional-programming/Java Optional.md",
     "java/advanced/java-functional-programming/Java Lambdas.md",
-    "java/core/collections-and-data-structures/Java Iterator.md",
-    "java/core/collections-and-data-structures/Java Collections.md"
+    "java/core/collections-and-data-structures/Java Iterator.md"
   ]
 }

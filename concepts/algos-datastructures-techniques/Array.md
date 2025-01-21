@@ -17,11 +17,12 @@
 5) **precomputation:** for questions where summation and multiplication of a subarray is involved, pre-computation using hashing or a prefix/suffix sum/product might be useful. [[Notes from CP Course#Smart Solution Precomputation, $O(n)$ time, $O(n)$ space|precomputation example]], [[Notes from CP Course#23) Prefix Sums|prefix sums]]
 6) **index as a hash key:** if you are given a sequence and the interviewer asks for $O(1)$ space it might be possible to use the array itself as an hash table. For example if the array only has values from $0$ to $n-1$, where $n$ is the array's length, we can transform the array an hash table.
 7) **traversing more than once:** sometimes traversing the array more than once can help you solve the problem while keeping the time complexity to O(n).
+8) ...
 
 **Essential Questions:**
-- [Two Sum](https://leetcode.com/problems/two-sum/)
-- [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
-- [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)
+- [Two Sum](https://leetcode.com/problems/two-sum/) (done)
+- [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) (done)
+- [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) (done)
 - [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
 
 **Recommended Practice Questions:**
@@ -33,3 +34,41 @@
 - [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)
 ### Sorting
 **TODO**
+
+### Moore Voting Algorithms
+From the solution of [Majority Element](https://leetcode.com/problems/majority-element/solutions/3676530/3-method-s-beats-100-c-java-python-beginner-friendly/?source=submission-ac)
+
+The Boyer-Moore majority voting algorithm is an algorithm for finding the majority of a sequence of elements using linear time and a constant number of words in memory. 
+
+In its simplest form, the algorithm finds a majority element, if there is one: that is, an element that occurs repeatedly for more than half of the elements of the input.
+A version of the algorithm that makes a second pass through the data can be used to verify that the element found in the first pass really is a majority.
+
+**The algorithm behaves as follows:**
+- initialize an element `m` and a counter `c = 0`
+- **for** each element `x` in the sequence
+	- **if** `c == 0` then `m = x` and `c = 1`
+	- **else if** `m == x` then `c++`
+	- **else** `c--`
+- **return** `m`
+
+**In words:**
+The algorithm maintains in its local variables a sequence element and a counter, with the counter initially zero. 
+It then processes the elements of the sequence, one at a time. 
+When processing an element `x`, if the counter is zero, the algorithm stores `x` as its remembered sequence element and sets the counter to one. Otherwise, it compares `x` to the stored element and either increments the counter (if they are equal) or decrements the counter (otherwise). 
+At the end of this process, if the sequence has a majority, it will be the element stored by the algorithm.
+### Late Prefix Sum/Product Trick
+Often we do not need the whole prefix sum/product array, we just need the current prefix sum/product. 
+Consider the prefix product case and an array `ppMinus1[i]` that have to contains, at position `i`, the prefix product of a given array `nums` until `i-1`. 
+Said in math terms: 
+$$\text{ppMinus1[i]} = \Pi_{j = 0}^{i-1}\ \text{nums[j]}$$
+We can create `ppMinus1` without computing the prefix product, we just use a variable 
+`accumulator` and assign it one iteration late: 
+```java
+int accumulator = 1;
+for(int i = 0; i < nums.length; i++){
+	ppMinus1[i] = accumulator;
+	accumulator = accumulator * nums[i];
+}
+```
+### Backtracking
+**todo**
