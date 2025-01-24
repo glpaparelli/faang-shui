@@ -8,6 +8,8 @@
 **Objective: 15 problems per day**
 - 21/01: 6
 - 22/01: 3
+- 23/01: 3
+- 24/01: 1
 ***
 
 **Stuff for preparing Interviews.**
