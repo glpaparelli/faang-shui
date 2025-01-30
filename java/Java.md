@@ -23,7 +23,7 @@
 	6) [[Java Functional Programming]]
 		- [[Java Lambdas]]
 		- [[Java Optional]]
-		- [[Java Streams]]
+		- [[Java Streams]] 
 		- [[Java Predicate]]
 	1) [[Java Multithreading and Concurrency]]
 	2) [[Java Beans]]
@@ -32,6 +32,7 @@
 	- [[How to use Maven]]
 
 **TODO:**
+0) [[Java Streams]] more in depth (comparator, Collector, String::length, ...)
 1) [[Java Interfaces]] && [[Java Abstract Classes]]
 2) [[Java IO]]
 3) [[Java Interview Questions#Design Patterns Factory vs Abstract Factory|Factory vs Abstract Factory]]

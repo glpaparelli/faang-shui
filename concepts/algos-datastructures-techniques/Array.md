@@ -26,15 +26,17 @@
 - [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
 
 **Recommended Practice Questions:**
-- [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
+- [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) (done)
 - [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)
 - [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
-- [3Sum](https://leetcode.com/problems/3sum/)
+- [3Sum](https://leetcode.com/problems/3sum/) (done)
 - [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
 - [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)
+
+**Must Do**
+- Merge of Two Sorted Arrays
 ### Sorting
 **TODO**
-
 ### Moore Voting Algorithms
 From the solution of [Majority Element](https://leetcode.com/problems/majority-element/solutions/3676530/3-method-s-beats-100-c-java-python-beginner-friendly/?source=submission-ac)
 
