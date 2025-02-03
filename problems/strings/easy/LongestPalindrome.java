@@ -1,8 +1,6 @@
 package problems.strings.easy;
-
 import java.util.HashMap;
 import java.util.Map;
-
 /*
  * LEETCODE 409: Longest Palindrome
  * Given a string "s" consisting of lowercase or uppercase letters, 

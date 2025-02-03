@@ -4,6 +4,14 @@ package problems.strings.easy;
  * Given a string s consisting of words and spaces, return the length 
  * of the last word in the string.
  * A word is a maximal substring consisting of non-space characters only.
+ * 
+ * SOLUTION: 
+ * Its trivial: find the first the index of the first char != 0 
+ * starting from the end of the string. 
+ * 
+ * Then start from the index and go backwards: every char != 0 is 
+ * part of the last word, hence increase length by 1. 
+ * When you find a " " you exit and return length.
  */
 public class LengthOfLastWord {
     public static void main(String[] args) {
