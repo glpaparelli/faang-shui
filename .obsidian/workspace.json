@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "Interview Training"
             }
+          },
+          {
+            "id": "13af52f4b1070477",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "java/Java Miscellaneous.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Java Miscellaneous"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -40,7 +55,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -163,8 +179,13 @@
       "webpage-html-export:Export Vault to HTML": false
     }
   },
-  "active": "23317227c2e24663",
+  "active": "13af52f4b1070477",
   "lastOpenFiles": [
+    "problems/strings/medium/LongestPalindromicSubstring.java",
+    "problems/strings/medium/FindAllAnagrams.java",
+    "problems/strings/medium/LargestNumber.java",
+    "problems/strings/medium/StringToInteger.java",
+    "problems/strings/medium",
     "README.md",
     "java/Java.md",
     "problems/strings/easy/LengthOfLastWord.java",
@@ -176,10 +197,6 @@
     "problems/array/medium/ContainerWithMostWater.java",
     "problems/array/medium/MaximumGap.java",
     "concepts/algos-datastructures-techniques/Array.md",
-    "problems/array/medium/SSEK.java",
-    "problems/array/medium/ContiguousArray.java",
-    "problems/array/medium/Contiguous",
-    "problems/array/medium/LongestConsecutiveSequence.java",
     "concepts/Notes from CP Course.md",
     "java/core/Java Virtual Machine.md",
     "java/core/Java 101.md",
