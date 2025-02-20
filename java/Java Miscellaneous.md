@@ -45,3 +45,31 @@ s.chars().mapToObj(ch -> (char) ch).collect(Collectors.set());
 
 My favorite is the `forEach` as I find it the most clear to read.
 The best is probably the one that use `collect`.
+
+### Reduce an array of StringBuilder to a single String 
+Given an array `stringBuilders[]` of `StringBuilder` return the string obtained by the 
+concatenation of all `stringBuilders[i]`.
+
+**classic for**
+```java
+StringBuilder res = new StringBuilder();
+for (StringBuilder sb : stringBuilders[])
+	res.append(sb);
+return res.toString();
+```
+
+**stream and collect**
+```java
+return Arrays
+			.stream(stringBuilders)
+		    .map(sb -> sb.toString())
+		    .collect(Collectors.joining())
+		:
+```
+
+**Consideration**
+Stream have an overhead (each lambda gets compiled into a functional interface object), on each object gets called `toString()`, etc. 
+The stream version might be more idiomatic but it is less efficient.
+
+### Initialization of Arrays
+Remem

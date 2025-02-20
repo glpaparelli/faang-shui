@@ -1,24 +1,9 @@
 ***
-**Timeline:**
-- **technical interview training:** 21/01 - 28/02
-- **start sending out applications:** 15/01
-- **start organizing mocking interviews:** 15/01
-- **start with interviews & behavioral stuff:** 15/01
-
-**Objective: 15 problems per day**
-- 21/01: 6
-- 22/01: 3
-- 23/01: 3
-- 24/01: 1
-- 28/01: 2
-- 30/01: 6
-- 03/02: 3
-***
-
 **Stuff for preparing Interviews.**
 1) [[Java]]
 2) [[Interview Training#Interview Best Practice and Tips|Interviews 101]]
 3) [[Interview Training#Technical Stuff|Technical Stuff]] 
+***
 ## Interview Best Practice and Tips
 ### What to do during your code interview
 - **make a good self introduction at the start of the interview:**
@@ -357,28 +342,3 @@ In the following we have a list of data structures and algorithms you should pre
 		- binary
 		- math
 		- geometry
-	- **techniques:**
-
-### Interviews Problems Techniques Checklist 
-**Note:** this is my checklist from my experience
-
-**Arrays**
-1) **is the array sorted?** 
-	1) binary search, exponential search, or two pointers (starting from 0 and n-1)
-2) **it is necessary to sort?** 
-	1) when dealing with intervals $[s_i, e_i]$ almost always yes, either by $s_i$ or $e_i$
-	2) not likely: sorting is very powerful and problems often becomes very easy once you sort.
-3) **set** 
-	1) you need to check the presence of something?
-4) **hash map**
-	1) presence of stuff
-	2) occurrence of stuff
-	3) where stuff happens (store the index where ...)
-5) **two pointers**
-	1) they usually work when the array is sorted
-	2) left = 0, right = n-1
-	3) middle = n/2, left = middle-1, right = middle+1
-	4) **sliding window**
-		1) use two pointers to make the start and end of the window
-		2) might need a data structure to implement the window (list, deque, ..)
-		3) usually with subarray / substring
