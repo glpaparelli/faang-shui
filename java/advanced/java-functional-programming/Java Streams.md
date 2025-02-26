@@ -1,3 +1,5 @@
+**TODO:** why `Arrays.stream(a)` with `a` a `char[]` array wont work?
+
 Java Streams (java.util.streams) were introduced with the eighth version of Java and, with [[Java Lambdas]], represent functional programming aspects of Java. 
 
 **Why Java Streams are related to functional programming?**

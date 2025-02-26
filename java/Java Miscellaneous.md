@@ -70,6 +70,5 @@ return Arrays
 **Consideration**
 Stream have an overhead (each lambda gets compiled into a functional interface object), on each object gets called `toString()`, etc. 
 The stream version might be more idiomatic but it is less efficient.
-
 ### Initialization of Arrays
-Remem
+Remember that Java initialize the arrays by default with "0".
