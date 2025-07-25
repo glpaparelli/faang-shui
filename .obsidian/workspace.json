@@ -4,24 +4,53 @@
     "type": "split",
     "children": [
       {
-        "id": "f80a757929e36cd5",
+        "id": "fe746995befbe4a6",
         "type": "tabs",
         "children": [
           {
-            "id": "2debf146699bc984",
+            "id": "93539afbf00b1ffc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "IBM Interviews.md",
+                "file": "java/advanced/Maven.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "IBM Interviews"
+              "title": "Maven"
+            }
+          },
+          {
+            "id": "e32b98573990e0f4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "java/advanced/Spring Boot.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Spring Boot"
+            }
+          },
+          {
+            "id": "59049000647621e5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Deutsche Bank Interview.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Deutsche Bank Interview"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -53,7 +82,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "maven",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +107,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 316.50152587890625
+    "width": 290.5069465637207
   },
   "right": {
     "id": "cac5045fc60be47d",
@@ -164,23 +193,39 @@
       "webpage-html-export:Export Vault to HTML": false
     }
   },
-  "active": "2debf146699bc984",
+  "active": "e32b98573990e0f4",
   "lastOpenFiles": [
-    "Interview Training.md",
-    "IBM Interviews.md",
-    "java/advanced/java-functional-programming/Java Streams.md",
-    "java/core/Java Polymorphism.md",
-    "java/core/Java Modifiers.md",
+    "Deutsche Bank Interview.md",
+    "java/advanced/Maven.md",
+    "java/advanced/Spring Boot.md",
+    "java/Java.md",
+    "java/Java Interview Questions.md",
     "java/Java Miscellaneous.md",
+    "concepts/programming-languages/Binding.md",
+    "Interview Training.md",
+    "concepts/Notes from CP Course.md",
+    "concepts/programming-languages/Runtime Systems.md",
+    "Untitled 1.md",
+    "java/advanced/java-functional-programming/Java Streams.md",
+    "java/core/Java Virtual Machine.md",
+    "java/advanced/Java Annotations.md",
+    "java/core/Java String.md",
+    "java/core/Java Inner Classes.md",
+    "java/core/Java Modifiers.md",
+    "java/advanced/java-functional-programming/Java Functional Programming.md",
+    "java/advanced/java-functional-programming/Java Lambdas.md",
+    "java/advanced/java-functional-programming/Java Optional.md",
+    "java/advanced/java-functional-programming/Java Predicate.md",
+    "java/core/Java Interfaces.md",
+    "Untitled 2.md",
+    "java/core/Java Polymorphism.md",
+    "java/core/Java Conventions.md",
+    "IBM Interviews.md",
     "OnlineTestIBM.java",
     "ibm1.java",
-    "concepts/Notes from CP Course.md",
-    "concepts/algos-datastructures-techniques/Array.md",
     "imgs/Pasted image 20250224141955.png",
     "imgs/Pasted image 20250224141851.png",
-    "concepts/algos-datastructures-techniques/String.md",
     "problems/strings/medium/ZigzagConversion.java",
-    "Da Base 16 a Base 2.md",
     "problems/strings/medium/EncodeAndDecode.java",
     "problems/strings/medium/LSWRC.java",
     "problems/strings/medium/LRCR.java",
@@ -188,14 +233,6 @@
     "problems/strings/medium/LongestPalindromicSubstring.java",
     "problems/strings/medium/FindAllAnagrams.java",
     "problems/strings/medium/LargestNumber.java",
-    "README.md",
-    "java/Java.md",
-    "java/core/Java Virtual Machine.md",
-    "java/core/Java 101.md",
-    "java/Java Interview Questions.md",
-    "java/core/Java Conventions.md",
-    "problems/array/tmp/README.md",
-    "2025-01-13.md",
     "imgs/Screenshot from 2024-01-19 15-39-52.png",
     "imgs/Screenshot from 2024-01-19 15-34-31.png",
     "imgs/Screenshot from 2024-01-09 10-01-57.png",
@@ -203,14 +240,6 @@
     "imgs/Screenshot from 2024-01-08 09-27-13.png",
     "imgs/Screenshot from 2024-01-08 09-19-39.png",
     "imgs/Screenshot from 2024-01-05 15-00-58.png",
-    "imgs/Screenshot from 2024-01-05 11-17-40.png",
-    "java/core/collections-and-data-structures/ArrayList.md",
-    "concepts/programming-languages/Abstract Machine.md",
-    "java/core/Java IO.md",
-    "java/advanced/java-functional-programming/Java Functional Programming.md",
-    "java/core/Java Interfaces.md",
-    "java/advanced/java-functional-programming/Java Predicate.md",
-    "concepts/programming-languages/Binding.md",
-    "concepts/programming-languages/Runtime Systems.md"
+    "imgs/Screenshot from 2024-01-05 11-17-40.png"
   ]
 }

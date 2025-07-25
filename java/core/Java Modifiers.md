@@ -4,9 +4,6 @@ Modifiers are divided in two groups:
 1) **access modifiers:** controls the access level
 2) **non-access modifiers:** provide other functionality
 #### Access Modifiers
-- **for Classes:**
-	- **public:** the class is accessible by any other.
-	- **default:** without any keyword before declaring a class, the class is accessible only by classes in the same package. 
 - **for Attributes, Methods and Constructors**
 	- **public:** the code is accessible for all classes
 	- **private:** the code is accessible only within the declared class

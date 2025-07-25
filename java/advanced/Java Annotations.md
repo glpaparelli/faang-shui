@@ -1,5 +1,5 @@
 Modifiers in Java (static, final, public, ...) are meta-data describing properties of program elements (meta-datas since they do not define semantics, they affects visibility).
-They are keywords thus wired-in in the language, we need an additional mechanisms for providing meta-data without chaning the language: *annotations* can be seen as (user-)definable modifiers.
+They are keywords thus wired-in in the language, we need an additional mechanisms for providing meta-data without changing the language: *annotations* can be seen as (user-)definable modifiers.
 ## Structure of Annotations
 Annotations are made of
 - name
